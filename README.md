@@ -16,7 +16,7 @@ The code is run and tested on Ubuntu 16.04 LTS with CUDA 9.0 and Python3, and yo
 * Nipype
 * ITKTubeTK
 ## Dataset:
-TubeTK Dataset can be found and downloaded [here](https://public.kitware.com/Wiki/TubeTK/Data). Currently it contains 109 patient cases. There are 42 cases which have the Auxillary Data folder (centerline + radius), such data indices can be found in Directory ```/patch_gen/id_list.txt.```\
+TubeTK Dataset can be found and downloaded [here](https://public.kitware.com/Wiki/TubeTK/Data). Currently it contains 109 patient cases. There are 42 cases which have the Auxillary Data folder (centerline + radius), such data indices can be found in Directory ```/patch_gen/id_list.txt```.\
 \
 Preprocess the volume data: 1. Pick MRA modality 2. Skull striping 3. Brain mask computation
 ```
@@ -25,7 +25,7 @@ $ python data_preprocess.py
 Convert the vessel label .tre file in TubeTK dataset to binary volume image:\
 Please refer [here](https://github.com/InsightSoftwareConsortium/ITKTubeTK) or [here](https://public.kitware.com/Wiki/TubeTK/Build_Instructions#Slicer) for building from source and python wrapping instructions.
 ## Patch Extraction:
-The patches have bigger spatial dimensions across axial plane (128 x 128 in our experiments) and 16 along vertical axis. Extract patches randomly from MRA volume and save the required input formats for both 3D and 2D branches, go to /patch_gen and run:
+The patches have bigger spatial dimensions across axial plane (128 x 128 in our experiments) and 16 along vertical axis. Extract patches randomly from MRA volume and save the required input formats for both 3D and 2D branches, go to ```/patch_gen``` and run:
 ```
 $ python patch_extraction.py --flag train
 $ python patch_extraction.py --flag val
