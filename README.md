@@ -16,7 +16,7 @@ The code is run and tested on Ubuntu 16.04 LTS with CUDA 9.0 and Python3, and yo
 * Nipype
 * ITKTubeTK
 ## Dataset:
-TubeTK Dataset can be found and downloaded [here](https://public.kitware.com/Wiki/TubeTK/Data). Currently it contains 109 patient cases. There are 42 cases which have the Auxillary Data folder (centerline + radius), such data indices can be found in Directory /patch_gen/id_list.txt.\
+TubeTK Dataset can be found and downloaded [here](https://public.kitware.com/Wiki/TubeTK/Data). Currently it contains 109 patient cases. There are 42 cases which have the Auxillary Data folder (centerline + radius), such data indices can be found in Directory ```/patch_gen/id_list.txt.```\
 \
 Preprocess the volume data: 1. Pick MRA modality 2. Skull striping 3. Brain mask computation
 ```
@@ -30,8 +30,10 @@ The patches have bigger spatial dimensions across axial plane (128 x 128 in our 
 $ python patch_extraction.py --flag train
 $ python patch_extraction.py --flag val
 ```
-## Network Training:
+## Network Training and Testing:
 Just run the following script when you get the data ready:)
 ```
 $ python train.py
 ```
+When completing the network training, you can test the segmentation performance using the metrics upon your requirements either patchwisedly or casewisely. The performance reported in the paper are computed in terms of the entire volume image which is fed into the network with non-overlapping patches. 
+
