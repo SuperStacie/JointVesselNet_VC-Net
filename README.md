@@ -31,9 +31,14 @@ $ python patch_extraction.py --flag train
 $ python patch_extraction.py --flag val
 ```
 ## Network Training and Testing:
-Just run the following script when you get the data ready:)
+Just run the following script when you get the data ready:) The model by default is trained on multi-GPU, you can disable the multi-GPU training mode in ```/model/vc-net.py``` before the model compilation. Or if you are using higher version of Tensorflow (like TF2.0+), you may need to modify a little bit about how the keras module is imported and use tf.distribute.MirroredStrategy() instead if you have multi-GPUs.
 ```
 $ python train.py
 ```
 When completing the network training, you can test the segmentation performance using the metrics upon your requirements either patchwisedly or casewisely. The performance reported in the paper are computed in terms of the entire volume image which is fed into the network with non-overlapping patches. 
 
+## Result Showcase:
+In MICCAI 2020 paper JointVesselNet, our experiments includes the 3D cerebravascular segmentation from MRA from both TubeTK MRA dataset and our collaborative clinic MRA dataset. Typical qualitative results are shown below:
+Ours vs Unet3D             |  Ours vs DeepVesselNet
+:-------------------------:|:-------------------------:
+![](Image/Unet3D_visual.png)  |  ![](Image/DVN_visual.png)
