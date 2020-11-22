@@ -66,6 +66,31 @@ Qualitative results of micro-level vessel segmentation in MICRO MRI dataset (key
 * :large_blue_circle: False Negative
 ![](Image/lvl2_visual.png)
 
-Visualization of Three Different Vascular System             |  Vascularture Labeling Tool
+In MICRO-MRI dataset, the ground truth vessel labels were finally acquired by slice-wise refinement based on the pre-computed vessel labels
+by MRAGnls, MRVGavg, and SWIATRG methods, instead of labeling from scratch manually using our specifically-designed cerebrovascular labeling and visualization tool as shown below. 
+Three Vascular Systems            |  Vascularture Labeling Tool
 :-------------------------:|:-------------------------:
 ![](Image/giphy.gif)  |  ![](Image/tool.gif)
+
+## Citation
+If you find our work useful in your research, please cite our work :smiley::
+```
+@article{wang2020vc,
+  title={VC-Net: Deep Volume-Composition Networks for Segmentation and Visualization of Highly Sparse and Noisy Image Data},
+  author={Wang, Yifan and Yan, Guoli and Zhu, Haikuan and Buch, Sagar and Wang, Ying and Haacke, Ewart Mark and Hua, Jing and Zhong, Zichun},
+  journal={IEEE transactions on visualization and computer graphics},
+  year={2020},
+  publisher={IEEE}
+}
+
+or
+
+@inproceedings{wang2020jointvesselnet,
+  title={JointVesselNet: Joint Volume-Projection Convolutional Embedding Networks for 3D Cerebrovascular Segmentation},
+  author={Wang, Yifan and Yan, Guoli and Zhu, Haikuan and Buch, Sagar and Wang, Ying and Haacke, Ewart Mark and Hua, Jing and Zhong, Zichun},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={106--116},
+  year={2020},
+  organization={Springer}
+}
+```
