@@ -39,6 +39,5 @@ When completing the network training, you can test the segmentation performance 
 
 ## Result Showcase:
 In MICCAI 2020 paper JointVesselNet, our experiments includes the 3D cerebravascular segmentation from MRA from both TubeTK MRA dataset and our collaborative clinic MRA dataset. Typical qualitative results are shown below:
-Ours vs Unet3D             |  Ours vs DeepVesselNet
-:-------------------------:|:-------------------------:
-![](Image/Unet3D_visual.png)  |  ![](Image/DVN_visual.png)
+
+![tubetk](Image/TubeTK.PNG)
