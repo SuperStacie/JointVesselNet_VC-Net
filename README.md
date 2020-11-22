@@ -39,7 +39,7 @@ When completing the network training, you can test the segmentation performance 
 
 ## Result Showcase:
 ### JointVesselNet:
-In MICCAI 2020 paper JointVesselNet, our experiments includes the 3D cerebravascular segmentation from MRA from both TubeTK MRA dataset and our collaborative clinic MRA dataset (the clinic MRA dataset is called as MRAG in MICRO-MRI dataset in SciVis 2020 VC-Net). Typical qualitative results are shown below:
+In MICCAI 2020 paper JointVesselNet, our experiments includes the 3D cerebravascular segmentation from MRA from both TubeTK MRA dataset and our collaborative clinic MRA dataset (the clinic MRA dataset is called as MRAG in MICRO-MRI dataset in SciVis 2020 VC-Net). Typical qualitative results are shown below (key comparison parts are marked in circles):
 
 ![tubetk](Image/TubeTK.PNG)
 
@@ -53,3 +53,19 @@ TubeTK MRA (Whole Brain)             |  MICRO-MRI Major-Level MRAG (Midbrain)
 MICRO-MRI Major-Level MRVG (Midbrain)             |  Original MICRO-MRI Micro-Level SWI (Whole Brain)
 :-------------------------:|:-------------------------:
 ![](Image/MRVG.PNG)  |  ![](Image/SWI.PNG)
+
+Qualitative results of major-level vessel segmentation in MICRO MRI dataset (key comparison parts are marked in circles):
+
+![](Image/major_visual_micro.png)
+
+Qualitative results of micro-level vessel segmentation in MICRO MRI dataset (key comparison parts are marked in circles):\
+    In the error maps:
+* :white_circle: True Positive
+* :black_circle: True Negative
+* :red_circle: False Positive
+* :large_blue_circle: False Negative
+![](Image/lvl2_visual.png)
+
+Visualization of Three Different Vascular System             |  Vascularture Labeling Tool
+:-------------------------:|:-------------------------:
+![](Image/giphy.gif)  |  ![](Image/tool.gif)
