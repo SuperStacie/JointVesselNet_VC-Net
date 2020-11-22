@@ -38,6 +38,18 @@ $ python train.py
 When completing the network training, you can test the segmentation performance using the metrics upon your requirements either patchwisedly or casewisely. The performance reported in the paper are computed in terms of the entire volume image which is fed into the network with non-overlapping patches. 
 
 ## Result Showcase:
-In MICCAI 2020 paper JointVesselNet, our experiments includes the 3D cerebravascular segmentation from MRA from both TubeTK MRA dataset and our collaborative clinic MRA dataset. Typical qualitative results are shown below:
+### JointVesselNet:
+In MICCAI 2020 paper JointVesselNet, our experiments includes the 3D cerebravascular segmentation from MRA from both TubeTK MRA dataset and our collaborative clinic MRA dataset (the clinic MRA dataset is called as MRAG in MICRO-MRI dataset in SciVis 2020 VC-Net). Typical qualitative results are shown below:
 
 ![tubetk](Image/TubeTK.PNG)
+
+### VC-Net:
+In SciVis 2020 VC-Net, we extended the general 3D cerebravascular segmentation into more challenging and finer scenarios which includes major level arteries/ veins, as well as micro-level vessels, different input image modalities are shown below:
+
+TubeTK MRA (Whole Brain)             |  MICRO-MRI Major-Level MRAG (Midbrain)
+:-------------------------:|:-------------------------:
+![](Image/MRA.PNG)  |  ![](Image/MRAG.PNG)
+
+MICRO-MRI Major-Level MRVG (Midbrain)             |  Original MICRO-MRI Micro-Level SWI (Whole Brain)
+:-------------------------:|:-------------------------:
+![](Image/MRVG.PNG)  |  ![](Image/SWI.PNG)
