@@ -60,8 +60,8 @@ Qualitative results of major-level vessel segmentation in MICRO MRI dataset (key
 
 Qualitative results of micro-level vessel segmentation in MICRO MRI dataset (key comparison parts are marked in circles):\
     In the error maps:\
-:white_circle: True Positive     :red_circle: False Positive\
-:black_circle: True Negative     :large_blue_circle: False Negative
+:white_circle: True Positive&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:red_circle: False Positive\
+:black_circle: True Negative&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;:large_blue_circle: False Negative
 
 ![](Image/lvl2_visual.png)
 
