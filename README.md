@@ -1,5 +1,5 @@
 # JointVesselNet_VC-Net
-Code Implementation for **JointVesselNet (MICCAI 2020)** &amp; **VC-Net (IEEE SciVis 2020)**\
+Code implementations are developed for combining both **JointVesselNet (MICCAI 2020)** &amp; **VC-Net (IEEE SciVis 2020)** techniques and datasets\
 \
 **:eyes:Paper Link:**\
 i: JointVesselNet: Joint Volume-Projection Convolutional Embedding Networks for 3D Cerebrovascular Segmentation [MICCAI 2020](https://link.springer.com/chapter/10.1007/978-3-030-59725-2_11)\
@@ -39,12 +39,12 @@ When completing the network training, you can test the segmentation performance 
 
 ## Result Showcase:
 ### JointVesselNet:
-In MICCAI 2020 paper JointVesselNet, our experiments includes the 3D cerebravascular segmentation from MRA from both TubeTK MRA dataset and our collaborative clinic MRA dataset (the clinic MRA dataset is called as MRAG in MICRO-MRI dataset in SciVis 2020 VC-Net). Typical qualitative results are shown below (key comparison parts are marked in circles):
+In JointVesselNet, our experiments include the 3D cerebravascular segmentation from MRA from both TubeTK MRA dataset and our collaborative clinic MRA dataset (the clinic MRA dataset is called as major-level MRAG in MICRO-MRI dataset in VC-Net). Typical qualitative results are shown below (key comparison parts are marked in circles):
 
 ![tubetk](Image/TubeTK.PNG)
 
 ### VC-Net:
-In SciVis 2020 VC-Net, we extended the general 3D cerebravascular segmentation into more challenging and finer scenarios which includes major level arteries/ veins, as well as micro-level vessels, different input image modalities are shown below:
+In VC-Net, we extended the general 3D cerebravascular segmentation framework into more challenging and finer microstructure scenarios which include multimodality major-level arteries/ veins, as well as micro-level vessels. Different input image modalities are shown below:
 
 TubeTK MRA (Whole Brain)             |  MICRO-MRI Major-Level MRAG (Midbrain)
 :-------------------------:|:-------------------------:
@@ -59,11 +59,10 @@ Qualitative results of major-level vessel segmentation in MICRO MRI dataset (key
 ![](Image/major_visual_micro.png)
 
 Qualitative results of micro-level vessel segmentation in MICRO MRI dataset (key comparison parts are marked in circles):\
-    In the error maps:
-* :white_circle: True Positive
-* :black_circle: True Negative
-* :red_circle: False Positive
-* :large_blue_circle: False Negative
+    In the error maps:\
+:white_circle: True Positive     :red_circle: False Positive\
+:black_circle: True Negative     :large_blue_circle: False Negative
+
 ![](Image/lvl2_visual.png)
 
 In MICRO-MRI dataset, the ground truth vessel labels were finally acquired by slice-wise refinement based on the pre-computed vessel labels
