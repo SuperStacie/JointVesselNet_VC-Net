@@ -1,5 +1,5 @@
 # JointVesselNet_VC-Net
-Code implementations are developed for combining both **JointVesselNet (MICCAI 2020)** &amp; **VC-Net (IEEE SciVis 2020)** techniques and datasets\
+Code implementations are developed for combining both **JointVesselNet (MICCAI 2020)** &amp; **VC-Net (IEEE TVCG SciVis 2020)** techniques and datasets\
 \
 **:eyes:Paper Link:**\
 i: JointVesselNet: Joint Volume-Projection Convolutional Embedding Networks for 3D Cerebrovascular Segmentation [MICCAI 2020](https://link.springer.com/chapter/10.1007/978-3-030-59725-2_11)\
@@ -78,7 +78,7 @@ If you find our work useful in your research, please cite our work :smiley::
 @article{wang2020vc,
   title={VC-Net: Deep Volume-Composition Networks for Segmentation and Visualization of Highly Sparse and Noisy Image Data},
   author={Wang, Yifan and Yan, Guoli and Zhu, Haikuan and Buch, Sagar and Wang, Ying and Haacke, Ewart Mark and Hua, Jing and Zhong, Zichun},
-  journal={IEEE transactions on visualization and computer graphics},
+  journal={IEEE Transactions on Visualization and Computer Graphics},
   year={2020},
   publisher={IEEE}
 }
