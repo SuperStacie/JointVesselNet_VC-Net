@@ -36,7 +36,11 @@ Just run the following script when you get the data ready:) The model by default
 ```
 $ python train.py
 ```
-When completing the network training, you can test the segmentation performance using the metrics upon your requirements either patchwisedly or casewisely. The performance reported in the paper are computed in terms of the entire volume image which is fed into the network with non-overlapping patches. 
+When completing the network training, you can test the segmentation performance using the metrics upon your requirements either patchwisedly or casewisely. The performance reported in the paper are computed in terms of the entire volume image which is fed into the network with non-overlapping patches.
+```
+$ python pred.py
+```
+The result will be saved as the whole volume image in nifti format with the same affine matrix as the orginal MRA volume for better examination. 
 
 ## Result Showcase:
 ### JointVesselNet:
